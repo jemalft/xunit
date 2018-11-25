@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+    <suite name="All Test Suite">
+
+    <test name="Div">
+        <classes>
+            <class name="calculator.DivTest" />
+        </classes>
+    </test>
+
+    <test name="Sub">
+        <classes>
+            <class name="calculator.AddSubTest" >
+                <methods>
+                   <include name="testSubPass" />
+                   <include name="testSubFail" />
+                   <!--
+                    <exclude name="testMakeOrder" />
+                    -->
+                 </methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>
