@@ -1,13 +1,21 @@
 package calculator;
 
 import org.junit.Assert;
+import org.pmw.tinylog.Logger;
 import org.testng.AssertJUnit;
 import org.testng.annotations.*;
 
-import static org.junit.Assert.assertNotEquals;
-import static org.testng.AssertJUnit.assertEquals;
+
 
 public class AddSubTest {
+
+
+    @Test
+    public void setUp(){
+        Logger.info("This is subtraction test");
+    }
+
+
     @Test(groups="Sub")
     public void testAddPass() {
         // assertEquals(String message, long expected, long actual)
